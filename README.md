@@ -1,4 +1,4 @@
-# john-community-modules
+# John Community Modules
 
 ## John 4000 Project
 John 4000 is a project of an advanced discord AI chatbot with a range of additional functionalities and features. 
