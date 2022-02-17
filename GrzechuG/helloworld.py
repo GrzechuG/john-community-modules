@@ -1,4 +1,2 @@
-
-class hello_test:
-	def hello_community(text):
-		return "Hello, community!"
+def hello_test(text):
+	return "Hello, community!"

@@ -1,10 +1,11 @@
 import discord
-from GrzechuG import *
+from community_modules.GrzechuG.helloworld import *
 
-await def community_main(message):
+async def community_main(message):
 	
 	# Added by GrzechuG:
 	if "test community modules" in message.content:
-		await hello_community.hello_test(message.content)
+		await message.channel.send(hello_test(message.content))
+		return True
 	
 
