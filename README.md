@@ -7,7 +7,7 @@ John 4000 is a project of an advanced discord AI chatbot with a range of additio
 Due to multiple requests and issues with general use function modules, and a fact that John already contains some modules written by the community, I present to you John Modules Initiative. This repository will contain community modules and shall be used by the community to develop custom John functions they desire.
 
 ## John structure and modules
-The "community_main" function is run from python file "community_modules.py" inside a main john loop. Ideally, every module should be created inside named folder and imported similarly to the GrzechuG example. "community_modules.py" should be used only to execute your imported library. The main john program executes community modules in the following way:
+The "community_main" function is run from python file "community_modules.py" from a main john loop. Ideally, every module should be created inside named folder and imported similarly to the GrzechuG example. "community_modules.py" should be used only to execute your imported library. The main john program executes community modules in the following way:
 
 ```python
 # [...]
