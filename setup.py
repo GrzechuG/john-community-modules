@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md", "r") as f:
     long_description = f.read()
@@ -11,6 +11,6 @@ setup(
     long_description=long_description,
     author="Grzegorz Gajewski",
     author_email="...",
-    packages=["john_community_modules"],
+    packages=find_packages(),
     install_requires=["setuptools", "wheel"],
 )
