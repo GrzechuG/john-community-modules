@@ -39,3 +39,9 @@ If you don't want john to execute following AI functions, return **True** in com
 Good luck and have fun creating!
 
 _** NOTE ** Previously created modules will be refactored and included here in the following days when necessary consent will be granted._
+
+## How to contribute?
+
+- fork this repo
+- make your changes at your own new branch in forked repo
+- make pull request
