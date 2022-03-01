@@ -1,10 +1,10 @@
-from typing import Optional, Any
+from typing import Any, Optional
 
-from john_community_modules.base import BaseEventHandler,  Message
+from john_community_modules.base import BaseEventHandler, Message
 
 
 class TrollHandler(BaseEventHandler):
-    def __init__(self, troll_message: str = '💩'):
+    def __init__(self, troll_message: str = "💩"):
         super().__init__()
         self.troll_message = troll_message
 
