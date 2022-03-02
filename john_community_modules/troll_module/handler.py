@@ -9,5 +9,9 @@ class TrollHandler(BaseEventHandler):
         self.troll_message = troll_message
 
     async def __call__(self, context: Message) -> Optional[Any]:
-        await context.channel.send(self.troll_message)
-        return True
+        if context.content == "poop":
+            await context.channel.send(self.troll_message)
+            return True
+        
+        return False
+
