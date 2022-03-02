@@ -7,12 +7,12 @@ from typing import List, Type
 from .base import BaseEventHandler
 
 
-def get_handlers(source_package: str = "john_community_modules") -> List[Type[BaseEventHandler]]:
+def get_handlers(source_package: str = "john_community_modules", search_dir_location : str = ".") -> List[Type[BaseEventHandler]]:
     """
     Tries to discover the handlers in the given package recursively.
     Package name from root is expected.
     """
-    search_dir = (pathlib.Path(source_package.replace(".", "/"))).absolute().as_posix()
+    search_dir = (pathlib.Path(search_dir_location)).absolute().as_posix()
     module_files = glob.glob(search_dir + "/**/*.py", recursive=True)
     module_files = [x for x in module_files if "__init__" not in x]
     module_files = [pathlib.Path(x).as_posix() for x in module_files]
