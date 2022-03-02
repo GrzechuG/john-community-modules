@@ -6,5 +6,5 @@ Message = TypeVar("Message")
 
 class BaseEventHandler(ABC):
     @abstractmethod
-    def __call__(self, context: Message) -> Optional[Any]:
+    async def __call__(self, context: Message) -> Optional[Any]:
         pass
