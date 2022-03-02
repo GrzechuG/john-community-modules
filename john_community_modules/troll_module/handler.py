@@ -10,4 +10,4 @@ class TrollHandler(BaseEventHandler):
 
     async def __call__(self, context: Message) -> Optional[Any]:
         await self.troll_message.channel.send("💩")
-        return 
+        return True
