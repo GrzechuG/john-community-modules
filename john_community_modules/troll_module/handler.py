@@ -8,5 +8,6 @@ class TrollHandler(BaseEventHandler):
         super().__init__()
         self.troll_message = troll_message
 
-    def __call__(self, context: Message) -> Optional[Any]:
-        return self.troll_message
+    async def __call__(self, context: Message) -> Optional[Any]:
+        await self.troll_message.channel.send("💩")
+        return 
